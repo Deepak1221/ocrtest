@@ -30,4 +30,14 @@ lateinit var viewModel: MainViewModel
             inputStr, outStr
         )
     }
+
+    @Test
+    fun isValidSeries() {
+        val inputStr ="MW123456"
+        val outStr = viewModel.isValidSeries(inputStr)
+        assertEquals(
+            "Pattern result",
+            true, outStr
+        )
+    }
 }
